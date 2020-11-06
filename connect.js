@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));//表单请求
 let pool
 reconn()
 
-function Result({code = 1, msg = '', data = {}}) {
+function Result({code = 0, msg = '', data = {}}) {
   this.code = code
   this.msg = msg
   this.data = data
